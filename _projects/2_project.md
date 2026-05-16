@@ -1,81 +1,25 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Continuous tensor networks and finite-temperature dynamics
+description: Continuous MPS/MPO methods for quantum gases, quantum field theories, and thermal response.
+img: assets/img/6.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: research
+published: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Many quantum systems, including ultracold atoms and quantum field theories, are naturally formulated in continuous space or continuous time. Continuous matrix product states (cMPS) and continuous matrix product operators (cMPO) provide tensor network representations that work directly in these limits, avoiding an explicit spatial or temporal lattice discretization.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I used cMPS methods to study Kac-Moody symmetries in one-dimensional bosonic systems, combining continuous tensor networks with efficient Riemannian optimization techniques [1]. We also extended these ideas to multicomponent cMPS and applied them to boson mixtures, where the continuous formulation gives direct access to continuum many-body physics [2].
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Another line of work developed a continuous matrix product operator approach to finite-temperature quantum states [3]. This method represents the continuous-time limit of a tensor network for the partition function and has been applied to thermodynamic calculations, including tensor network simulations of the $(1+1)$-dimensional {$O(3)$} nonlinear sigma model with a topological term [4].
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## References
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+[1] W. Tang and J. Haegeman, Kac-Moody symmetries in one-dimensional bosonic systems, *Physical Review B* **108**, 035153 (2023). [doi:10.1103/PhysRevB.108.035153](https://doi.org/10.1103/PhysRevB.108.035153)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+[2] W. Tang, B. Tuybens, and J. Haegeman, Numerical study of boson mixtures with multi-component continuous matrix product states, arXiv:2512.24998 (2025). [arXiv:2512.24998](https://arxiv.org/abs/2512.24998)
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+[3] W. Tang, H.-H. Tu, and L. Wang, Continuous matrix product operator approach to finite temperature quantum states, *Physical Review Letters* **125**, 170604 (2020). [doi:10.1103/PhysRevLett.125.170604](https://doi.org/10.1103/PhysRevLett.125.170604)
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+[4] W. Tang, X. C. Xie, L. Wang, and H.-H. Tu, Tensor network simulation of the $(1+1)$-dimensional {$O(3)$} nonlinear {$\sigma$}-model with {$\theta=\pi$} term, *Physical Review D* **104**, 114513 (2021). [doi:10.1103/PhysRevD.104.114513](https://doi.org/10.1103/PhysRevD.104.114513)

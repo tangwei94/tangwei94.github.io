@@ -1,81 +1,23 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Gauge-aware optimization for iPEPS
+description: Stable and reliable variational optimization methods for two-dimensional tensor network states.
 img: assets/img/12.jpg
 importance: 1
-category: work
-related_publications: true
+category: research
+published: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Variational infinite projected entangled-pair states (iPEPS) are a central tool for strongly interacting quantum lattice models in two dimensions. A recurring issue in practical iPEPS calculations is that the same physical state can be represented in many different gauges, while approximate contraction algorithms and gradient-based optimization can be strongly affected by this gauge freedom.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+My work has shown that fixed points of non-Hermitian transfer matrices provide useful diagnostics for tensor network environments and gauge choices [1]. Building on this, we developed a gauge-fixed variational optimization scheme for projected entangled-pair states, using manifold-optimization ideas to keep the tensors in a better-conditioned representation during optimization [2].
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+In related work, we demonstrated that local approximations to the tangent-space metric can be used as preconditioners for two-dimensional tensor network optimization, significantly accelerating convergence with little additional cost [3]. Together, these results point toward iPEPS algorithms that are more stable because they account for the geometry and gauge structure of the variational manifold.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## References
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+[1] W. Tang, F. Verstraete, and J. Haegeman, Matrix product state fixed points of non-Hermitian transfer matrices, *Physical Review B* **111**, 035107 (2025). [doi:10.1103/PhysRevB.111.035107](https://doi.org/10.1103/PhysRevB.111.035107)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+[2] W. Tang, L. Vanderstraeten, and J. Haegeman, Gauging the variational optimization of projected entangled-pair states, arXiv:2508.10822 (2025). [arXiv:2508.10822](https://arxiv.org/abs/2508.10822)
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+[3] X.-Y. Zhang, Q. Yang, P. Corboz, J. Haegeman, and W. Tang, Accelerating two-dimensional tensor network optimization by preconditioning, *Physical Review B* **113**, 125111 (2026). [doi:10.1103/h396-yc28](https://doi.org/10.1103/h396-yc28)

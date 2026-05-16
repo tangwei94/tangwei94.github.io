@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: FWO postdoctoral fellow, Ghent University
 
@@ -24,4 +24,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an FWO postdoctoral fellow at Ghent University.
+I am an FWO postdoctoral fellow in the Quantum Group at Ghent University. My research develops tensor network methods for quantum many-body systems, with a focus on reliable variational optimization, continuous tensor networks, finite-temperature physics, disordered systems, and universal structures in conformal criticality.

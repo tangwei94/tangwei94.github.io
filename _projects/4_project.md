@@ -1,80 +1,25 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Universal entropies and conformal criticality
+description: Extracting universal data from conformal field theories using tensor networks and Monte Carlo methods.
+img: assets/img/3.jpg
+importance: 4
+category: research
+published: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Conformal field theories describe critical points in low-dimensional quantum systems and statistical models. Beyond the central charge, additional universal quantities are often needed to distinguish different critical theories and identify their operator content.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+My work studies universal entropies of conformal field theories on nontrivial manifolds such as the Klein bottle. We showed that Klein bottle entropy can be related to boundary entropy through a cut-and-sew construction, making it accessible in lattice models with quantum Monte Carlo methods [1].
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+For compactified boson conformal field theories, we found that the Klein bottle entropy is directly related to the compactification radius, providing a route to extracting the Luttinger parameter in Tomonaga-Luttinger liquids [2]. Later work extended these ideas by studying universal scaling of Klein bottle entropy near conformal critical points [3] and by extracting the Luttinger parameter from a single wave function using crosscap-state ideas [4].
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## References
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+[1] W. Tang, L. Chen, W. Li, X. C. Xie, H.-H. Tu, and L. Wang, Universal boundary entropies in conformal field theory: a quantum Monte Carlo study, *Physical Review B* **96**, 115136 (2017). [doi:10.1103/PhysRevB.96.115136](https://doi.org/10.1103/PhysRevB.96.115136)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+[2] W. Tang, X. C. Xie, L. Wang, and H.-H. Tu, Klein bottle entropy of compactified boson conformal field theory, *Physical Review B* **99**, 115105 (2019). [doi:10.1103/PhysRevB.99.115105](https://doi.org/10.1103/PhysRevB.99.115105)
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+[3] Y. Zhang, A. Hulsch, H.-C. Zhang, W. Tang, L. Wang, and H.-H. Tu, Universal scaling of Klein bottle entropy near conformal critical points, *Physical Review Letters* **130**, 151602 (2023). [doi:10.1103/PhysRevLett.130.151602](https://doi.org/10.1103/PhysRevLett.130.151602)
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+[4] B.-Y. Tan, Y. Zhang, H.-C. Zhang, W. Tang, L. Wang, H.-H. Tu, and Y.-H. Wu, Extracting the Luttinger parameter from a single wave function, *Physical Review Letters* **134**, 076501 (2025). [doi:10.1103/PhysRevLett.134.076501](https://doi.org/10.1103/PhysRevLett.134.076501)
