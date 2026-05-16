@@ -82,3 +82,4 @@ For troubleshooting, see:
 
 ## other requirements
 - **Publication ordering:** Keep `_bibliography/papers.bib` ordered by publication time, with the most recent papers first. When adding publications, include `year` and `month` fields when known so Jekyll Scholar can sort by recency.
+- You only have reading access to files in pdf_materials. do not edit, remove, or commit files in pdf_materials.
