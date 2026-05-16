@@ -184,7 +184,6 @@ exclude:
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
-  - assets/pdf/tw-cv.pdf
   - lighthouse_results/
   - package.json
   - package-lock.json
