@@ -24,4 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an FWO postdoctoral fellow in the Quantum Group at Ghent University. My research develops tensor network methods for quantum many-body systems, with a focus on reliable variational optimization, continuous tensor networks, finite-temperature physics, disordered systems, and universal structures in conformal criticality.
+I am an FWO Senior Postdoctoral Fellow in the Quantum Group at Ghent University, working with Jutho Haegeman and Frank Verstraete since 2024. Before that, I was a postdoctoral researcher at Ghent University with Jutho Haegeman from 2021 to 2024. I received my Ph.D. in Physics from Peking University in 2021, where I worked on condensed matter physics with Xin-Cheng Xie and Lei Wang, and my B.S. in Physics from Nanjing University in 2016.
+
+My research develops tensor network methods for quantum many-body systems. I am especially interested in variational optimization of projected entangled-pair states, continuous tensor networks, finite-temperature quantum states, disordered systems, and universal structures in conformal criticality. I have also served as a referee for journals including Physical Review Letters, Physical Review B, Physical Review Research, Communications Physics, and Journal of Physics A.
