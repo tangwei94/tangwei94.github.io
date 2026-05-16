@@ -79,3 +79,6 @@ For troubleshooting, see:
 - [Common Pitfalls & Workarounds](.github/copilot-instructions.md#common-pitfalls--workarounds) in copilot-instructions.md
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed solutions
 - [GitHub Issues](https://github.com/alshedivat/al-folio/issues) to search for your specific problem.
+
+## other requirements
+- **Publication ordering:** Keep `_bibliography/papers.bib` ordered by publication time, with the most recent papers first. When adding publications, include `year` and `month` fields when known so Jekyll Scholar can sort by recency.
