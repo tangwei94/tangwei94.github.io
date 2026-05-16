@@ -6,7 +6,7 @@ subtitle: FWO postdoctoral fellow, Ghent University
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: FOTOWeiTang.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 
