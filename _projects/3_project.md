@@ -1,19 +1,16 @@
 ---
 layout: page
 title: Tensor networks for disordered systems
-description: Direct thermodynamic-limit methods for disorder-averaged quantum many-body physics.
-img: assets/img/9.jpg
+description: Disorder-averaged quantum many-body physics directly in the thermodynamic limit.
 importance: 3
 category: research
 published: true
 ---
 
-Disorder produces phenomena such as localization, glassy dynamics, and infinite-randomness criticality. Standard numerical simulations often rely on explicit sampling over many disorder configurations, which can be costly and can obscure thermodynamic-limit behavior near disorder-dominated critical points.
+Disorder plays a central role in quantum many-body physics, giving rise to phenomena such as localization, glassy dynamics, and infinite-randomness criticality. Despite its importance, numerical simulations of disordered quantum systems remain challenging. Conventional approaches typically rely on explicit sampling over many disorder realizations in finite-size systems, which is computationally expensive and becomes less reliable near disorder-dominated critical points due to rare-region effects and broad probability distributions.
 
-In recent work, we developed a tensor-network method for extracting average properties of disordered spin chains using translationally invariant tensor networks [1]. The key idea is to exploit statistical translational invariance so that disorder-averaged expectation values can be computed directly in the thermodynamic limit, rather than by averaging over finite samples.
+Recently, we developed a tensor network method that computes disorder-averaged expectation values in random spin chains without explicit disorder sampling [1]. By exploiting **statistical translational invariance**, the algorithm operates directly in the thermodynamic limit using translationally invariant tensor networks. We demonstrated the effectiveness of this approach on random spin chains, including the infinite-randomness critical point of the random transverse-field Ising model, opening a new tensor network route to disordered quantum matter.
 
-We benchmarked the approach on random spin-chain problems where conventional disorder sampling is difficult, including regimes controlled by infinite-randomness physics. This provides a concrete tensor network route to studying averaged observables in disordered quantum systems without explicitly generating many disorder realizations.
+### References {#references-disorder}
 
-## References
-
-[1] K. Vervoort, W. Tang, and N. Bultinck, Extracting average properties of disordered spin chains with translationally invariant tensor networks, arXiv:2504.21089 (2025). [arXiv:2504.21089](https://arxiv.org/abs/2504.21089)
+- **[1]** K. Vervoort, W. Tang, and N. Bultinck, _Extracting average properties of disordered spin chains with translationally invariant tensor networks_, [arXiv:2504.21089 (2025)](https://arxiv.org/abs/2504.21089).

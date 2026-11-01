@@ -8,11 +8,11 @@ middle_name:
 last_name: Tang
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website of Wei Tang (唐维), FWO postdoctoral fellow at Ghent University.
+  Academic website of Wei Tang (唐维), Assistant Professor at the Singapore University of Technology and Design (SUTD).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Wei Tang, Tang Wei, academic website, research, Ghent University, FWO # add your own keywords or leave empty
+keywords: Wei Tang, Tang Wei, academic website, research, SUTD, Singapore University of Technology and Design, Science Mathematics and Technology, tensor networks, quantum many-body physics # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

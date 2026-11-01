@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Gauge-aware optimization for iPEPS
-description: Stable and reliable variational optimization methods for two-dimensional tensor network states.
-img: assets/img/12.jpg
+title: Infinite projected entangled-pair states
+description: Gauge, optimization, and preconditioning methods for two-dimensional tensor network states.
 importance: 1
 category: research
 published: true
 ---
 
-Variational infinite projected entangled-pair states (iPEPS) are a central tool for strongly interacting quantum lattice models in two dimensions. A recurring issue in practical iPEPS calculations is that the same physical state can be represented in many different gauges, while approximate contraction algorithms and gradient-based optimization can be strongly affected by this gauge freedom.
+**Infinite projected entangled-pair states (iPEPS)** are now among the most important numerical methods for studying strongly interacting quantum lattice models in two dimensions. Our recent work focuses on improving their efficiency, stability, and scope of application.
 
-My work has shown that fixed points of non-Hermitian transfer matrices provide useful diagnostics for tensor network environments and gauge choices [1]. Building on this, we developed a gauge-fixed variational optimization scheme for projected entangled-pair states, using manifold-optimization ideas to keep the tensors in a better-conditioned representation during optimization [2].
+One of the central bottlenecks in iPEPS simulations is the high computational cost of variational optimization. To mitigate this issue, we introduced a **preconditioning scheme** that incorporates the geometry of the iPEPS manifold to substantially accelerate convergence with negligible additional cost [1].
 
-In related work, we demonstrated that local approximations to the tangent-space metric can be used as preconditioners for two-dimensional tensor network optimization, significantly accelerating convergence with little additional cost [3]. Together, these results point toward iPEPS algorithms that are more stable because they account for the geometry and gauge structure of the variational manifold.
+Another major challenge in iPEPS simulations is that approximate environment contractions break the exact variational principle, allowing the optimizer to exploit contraction errors and become unstable. We identified that the **gauge degrees of freedom** on the virtual indices play an important role in this instability by strongly affecting the accuracy of two-dimensional tensor network contractions [2]. Building on this insight, we developed a manifold-based **gauge-fixed optimization** scheme that maintains the iPEPS in the minimal canonical form and significantly improves optimization stability [3].
 
-## References
+We have also extended the iPEPS framework to two-dimensional interacting systems in a uniform magnetic field, where conventional approaches require large magnetic unit cells. To bypass this limitation, we introduced a **gauge-covariant iPEPS** ansatz in which physical observables remain translation invariant and the magnetic flux per plaquette enters as a continuous parameter [4].
 
-[1] W. Tang, F. Verstraete, and J. Haegeman, Matrix product state fixed points of non-Hermitian transfer matrices, *Physical Review B* **111**, 035107 (2025). [doi:10.1103/PhysRevB.111.035107](https://doi.org/10.1103/PhysRevB.111.035107)
+### References {#references-ipeps}
 
-[2] W. Tang, L. Vanderstraeten, and J. Haegeman, Gauging the variational optimization of projected entangled-pair states, arXiv:2508.10822 (2025). [arXiv:2508.10822](https://arxiv.org/abs/2508.10822)
-
-[3] X.-Y. Zhang, Q. Yang, P. Corboz, J. Haegeman, and W. Tang, Accelerating two-dimensional tensor network optimization by preconditioning, *Physical Review B* **113**, 125111 (2026). [doi:10.1103/h396-yc28](https://doi.org/10.1103/h396-yc28)
+- **[1]** X.-Y. Zhang, Q. Yang, P. Corboz, J. Haegeman, and W. Tang, _Accelerating two-dimensional tensor network optimization by preconditioning_, [Physical Review B **113**, 125111 (2026)](https://doi.org/10.1103/h396-yc28).
+- **[2]** W. Tang, F. Verstraete, and J. Haegeman, _Matrix product state fixed points of non-Hermitian transfer matrices_, [Physical Review B **111**, 035107 (2025)](https://doi.org/10.1103/PhysRevB.111.035107).
+- **[3]** W. Tang, L. Vanderstraeten, and J. Haegeman, _Gauging the variational optimization of projected entangled-pair states_, [arXiv:2508.10822 (2025)](https://arxiv.org/abs/2508.10822).
+- **[4]** W. Tang, G. Möller, F. Verstraete, and L. Vanderstraeten, _Gauge-covariant projected entangled paired states for interacting systems in a magnetic field_, [arXiv:2604.24574 (2026)](https://arxiv.org/abs/2604.24574).

@@ -33,6 +33,54 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
+// About
+.post-header .about-subtitle {
+  color: var(--global-text-color-light);
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+// Research directions
+.research-direction {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // Profile
 .profile {
   img {

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: FWO postdoctoral fellow, Ghent University
+subtitle: Assistant Professor, Science, Mathematics and Technology (SMT), SUTD
 
 profile:
   align: right
@@ -24,8 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an FWO Senior Postdoctoral Fellow in the Quantum Group at Ghent University, working with Jutho Haegeman and Frank Verstraete since 2024. Before that, I was a postdoctoral researcher at Ghent University with Jutho Haegeman from 2021 to 2024. I received my Ph.D. in Physics from Peking University in 2021, where I worked on condensed matter physics with Xin-Cheng Xie and Lei Wang, and my B.S. in Physics from Nanjing University in 2016. A current [CV]({{ '/assets/pdf/tw-cv.pdf' | relative_url }}) is available as a PDF.
+I am an Assistant Professor in the Science, Mathematics and Technology (SMT) cluster at the Singapore University of Technology and Design (SUTD). Before joining SUTD in 2026, I was a postdoctoral fellow in the Quantum Group at Ghent University (2021–2026). I received my Ph.D. in Physics from Peking University in 2021 and my B.S. in Physics from Nanjing University in 2016. More details can be found in my [CV]({{ '/assets/pdf/tw-cv.pdf' | relative_url }}).
 
-My research develops tensor network methods for quantum many-body systems. I am especially interested in variational optimization of projected entangled-pair states, continuous tensor networks, finite-temperature quantum states, disordered systems, and universal structures in conformal criticality. I have also served as a referee for journals including Physical Review Letters, Physical Review B, Physical Review Research, Communications Physics, and Journal of Physics A.
+My research centers on developing novel numerical approaches for the study of **quantum many-body physics**, with a primary focus on **tensor networks**. I am also interested in broader applications of tensor network methods, such as quantum computation and machine learning.
 
-I will join the Singapore University of Technology and Design (SUTD) as an assistant professor. I have an open position for Ph.D. student, interested applicants should contact me via email.  
+**I have an opening for a Ph.D. student at SUTD.** Motivated students interested in computational quantum many-body physics and tensor network methods are welcome to contact me at [wei_tang@sutd.edu.sg](mailto:wei_tang@sutd.edu.sg).
