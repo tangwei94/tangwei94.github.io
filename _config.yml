@@ -149,7 +149,7 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: false
   teachings:
     output: true
 
@@ -187,6 +187,7 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
+  - pdf_materials/
   - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
