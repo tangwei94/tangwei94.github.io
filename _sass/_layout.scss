@@ -86,6 +86,25 @@ body.sticky-bottom-footer {
   img {
     width: 100%;
   }
+
+  .social {
+    margin: 0.75rem 0 1rem;
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      font-size: 2rem;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+      }
+    }
+  }
 }
 
 // Content layout uses Bootstrap's grid system with responsive columns

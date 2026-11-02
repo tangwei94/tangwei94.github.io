@@ -15,6 +15,17 @@ layout: default
   </header>
 
   <article>
+    {% if page.social %}
+      {% capture social_content %}
+        <div class="social">
+          <div class="contact-icons">{% social_links %}</div>
+          {% if site.contact_note %}
+            <div class="contact-note">{{ site.contact_note }}</div>
+          {% endif %}
+        </div>
+      {% endcapture %}
+    {% endif %}
+
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -31,6 +42,9 @@ layout: default
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
+        {% endif %}
+        {% if page.social %}
+          {{ social_content }}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -64,14 +78,11 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+    {% unless page.profile %}
+      {% if page.social %}
+        {{ social_content }}
+      {% endif %}
+    {% endunless %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
