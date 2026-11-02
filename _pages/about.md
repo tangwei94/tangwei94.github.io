@@ -24,8 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an Assistant Professor in the Science, Mathematics and Technology (SMT) cluster at the Singapore University of Technology and Design (SUTD). Before joining SUTD in 2026, I was a postdoctoral fellow in the Quantum Group at Ghent University (2021–2026). I received my Ph.D. in Physics from Peking University in 2021 and my B.S. in Physics from Nanjing University in 2016. More details can be found in my [CV]({{ '/assets/pdf/tw-cv.pdf' | relative_url }}).
+I am an Assistant Professor in the Science, Mathematics and Technology (SMT) cluster at the Singapore University of Technology and Design (SUTD). Before joining SUTD in 2026, I was a postdoctoral fellow in the Quantum Group at Ghent University (2021–2026). I received my Ph.D. in Physics from Peking University in 2021 and my B.S. in Physics from Nanjing University in 2016.
 
 My research centers on developing novel numerical approaches for the study of **quantum many-body physics**, with a primary focus on **tensor networks**. I am also interested in broader applications of tensor network methods, such as quantum computation and machine learning.
 
-**I have an opening for a Ph.D. student at SUTD.** Motivated students interested in computational quantum many-body physics and tensor network methods are welcome to contact me at [wei_tang@sutd.edu.sg](mailto:wei_tang@sutd.edu.sg).
+**I have an opening for a Ph.D. student at SUTD.** Motivated students interested in computational quantum many-body physics and tensor network methods are welcome to contact me at wei_tang [at] sutd [dot] edu [dot] sg.
