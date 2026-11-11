@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an Assistant Professor in the Science, Mathematics and Technology (SMT) cluster at the Singapore University of Technology and Design (SUTD). Before joining SUTD in 2026, I was a postdoctoral fellow in the Quantum Group at Ghent University (2021–2026). I received my Ph.D. in Physics from Peking University in 2021 and my B.S. in Physics from Nanjing University in 2016.
+I am an Assistant Professor in the Science, Mathematics and Technology (SMT) cluster at the Singapore University of Technology and Design (SUTD). Before joining SUTD in 2026, I was a postdoctoral fellow in the Quantum Group at Ghent University (2021–2026). I received my B.S. in Physics from Nanjing University in 2016 and my Ph.D. in Physics from Peking University in 2021, and spent time as a visiting doctoral student at the Technical University of Dresden during my Ph.D. studies.
 
 My research centers on developing novel numerical approaches for the study of **quantum many-body physics**, with a primary focus on **tensor networks**. I am also interested in broader applications of tensor network methods, such as quantum computation and machine learning.
 
